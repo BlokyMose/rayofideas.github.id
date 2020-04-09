@@ -160,6 +160,7 @@ header nav ul li{
 header nav ul li a{
 }
 
+/*
 .icon-box{
   width: 75px;
   height: 75px;
@@ -168,14 +169,18 @@ header nav ul li a{
   vertical-align: middle;
   margin: 0 auto;
 }
+*/
 
+/*
 .icon-box img{
   opacity: 0.5;
   width: 75px;
   height: 75px;
   padding:  10px 10px 10px;
 }
+*/
 
+/*
 .icon-box p{
   font-family: bodoni;
   font-size: 20px;
@@ -183,9 +188,11 @@ header nav ul li a{
   text-align: center;
   opacity: 0;
 }
+*/
 
 
-.icon-box:hover img, p{
+/*
+.icon-box:hover img{
   opacity: 1;
   width: 80px;
   height: 80px;
@@ -194,12 +201,85 @@ header nav ul li a{
 .icon-box:hover p{
   opacity: 1;
 }
-header .header-brand{
+*/
+
+.header-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "icon-s icon-p brand icon-g icon-u"
+}
+
+.header-grid img{
+  opacity: 0.5;
+  width: 75px;
+  padding:  0px 10px 0px 10px;
+}
+
+.header-grid div:hover img{
+  opacity: 1;
+  width: 80px;
+  height: 80px;
+}
+
+.header-grid p{
+    font-family: bodoni;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+}
+
+.header-grid div:hover p{
+  opacity: 1;
+}
+
+.header-brand{
   font-family: exotc;
   font-size: 48px;
   color: white;
   text-align: center;
   margin-left: 50px;
+
+  grid-area: brand;
+}
+
+.icon-stories{
+  grid-area: icon-s;
+  justify-self: center;
+}
+.caption-stories{
+  grid-area: cap-s;
+  justify-self: center;
+  align-self: start;
+}
+.icon-photos{
+  grid-area: icon-p;
+  justify-self: center;
+}
+.caption-photos{
+  grid-area: cap-p;
+  justify-self: center;
+  align-self: start;
+}
+.icon-games{
+  grid-area: icon-g;
+  justify-self: center;
+}
+.caption-games{
+  grid-area: cap-g;
+  justify-self: center;
+  align-self: start;
+}
+.icon-updates{
+  grid-area: icon-u;
+  justify-self: center;
+}
+.caption-updates{
+  grid-area: cap-u;
+  justify-self: center;
+  align-self: start;
 }
 
 /*main*/
