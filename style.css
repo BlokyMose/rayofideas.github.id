@@ -160,55 +160,12 @@ header nav ul li{
 header nav ul li a{
 }
 
-/*
-.icon-box{
-  width: 75px;
-  height: 75px;
-  position: fixed;
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 auto;
-}
-*/
-
-/*
-.icon-box img{
-  opacity: 0.5;
-  width: 75px;
-  height: 75px;
-  padding:  10px 10px 10px;
-}
-*/
-
-/*
-.icon-box p{
-  font-family: bodoni;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  opacity: 0;
-}
-*/
-
-
-/*
-.icon-box:hover img{
-  opacity: 1;
-  width: 80px;
-  height: 80px;
-}
-
-.icon-box:hover p{
-  opacity: 1;
-}
-*/
-
 .header-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas:
-  "icon-s icon-p brand icon-g icon-u"
+  "icon-s icon-p brand icon-g icon-u";
 }
 
 .header-grid img{
@@ -334,54 +291,215 @@ main{
   color: rgba(255,255,255,1);
 }
 
-.index-welcome{
+.index-white-bg{
+  background-color: rgba(255,255,255,0.5);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.index-tricolumn{
   height: 250px;
-  padding-top: 40px;
+  margin: 100px 25px 20px 25px;
   /*
   background-color: rgba(59, 110, 130,0.8);
   */
   background-color: rgba(255, 255, 255,1);
   display: grid;
-  grid-template-columns: 5% 30% 40% 20% 5%;
+  grid-template-columns: 2% 32% 33% 33%;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-  ". h1 p . ."
-  ". h2 p . ."
+  "div h1 p ."
+  "div h2 p ."
 }
-
-.index-welcome h1{
+.index-tricolumn div{
+  grid-area: div;
+}
+.index-tricolumn h1{
   font-size: 50px;
   font-weight: 700;
   font-family: bodoni;
-  color: rgba(70, 166, 126,1);
-  padding: 0px 0px 5px 0px;
+  padding: 0px 0px 5px 20px;
 
   justify-self: start;
   align-self: flex-end;
   grid-area: h1;
 }
-.index-welcome h2{
-  font-size: 40px;
+.index-tricolumn h2{
+  font-size: 35px;
   font-weight: 600;
   font-family: bodoni;
-  color: rgba(98, 181, 143,1);
-  padding: 5px 0px 5px 0px;
+  padding: 5px 0px 5px 20px;
 
   justify-self: start;
   align-self: flex-start;
   grid-area: h2;
 }
-
-.index-welcome p{
+.index-tricolumn p{
   width: 500px;
   height: auto;
   font-size: 20px;
   font-weight: normal;
   font-family: calibri;
-  color: rgba(98, 181, 143,1);
   line-height: 30px;
 
   grid-area: p;
   align-self: center;
   justify-self: center;
+}
+
+
+.index-green div{
+  background-color: rgb(84, 155, 120);
+}
+.index-green{
+  color: rgba(70, 166, 126,1);
+}
+.index-green h2{
+  color: rgba(98, 181, 143,1);
+}
+
+.index-blue div{
+  background-color: rgb(80, 197,255);
+}
+.index-blue{
+  color: rgb(52, 188,255);
+}
+.index-blue h2{
+  color: rgb(80, 197,255);
+}
+
+.index-slogan-banner{
+  height: 250px;
+  margin: 100px 25px 20px 25px;
+  background-image: url("img/slogan-banner-2020.png");
+  background-position: center;
+}
+
+.index-gold div{
+  background-color: rgb(235,235,1);
+}
+.index-gold{
+  color: rgb(200,200,0);
+}
+.index-gold h2{
+  color: rgb(220,220,1);
+}
+
+.index-sub-reel{
+  height: 250px;
+  margin: 100px 25px 20px 25px;
+  background-color: rgba(255, 255, 255,1);
+  display: grid;
+  grid-template-columns: 2% 2% 32% 16% 16% 16% 16%;
+  grid-template-rows: 1fr;
+  /*
+  grid-template-areas:
+  "div div-sub h1 r1 r2 r3 more";
+  */
+}
+.index-sub-reel a{
+}
+
+.index-sub-reel h1{
+  font-size: 50px;
+  font-weight: 700;
+  font-family: bodoni;
+  padding: 0px 0px 5px 20px;
+
+  justify-self: start;
+  align-self: center;
+  grid-column: 3 / 4;
+
+}
+.index-reel{
+  height: 100%;
+  width: auto;
+  position: relative;
+
+}
+.index-reel .index-reel-ic img{
+  padding-top: 80px;
+  height: 40%;
+  width: 40%;
+  object-fit: contain;
+  object-position: center;
+}
+.index-main-div{
+  grid-column: 1 / 2;
+}
+.index-sub-div {
+  opacity: 0.5;
+  grid-column: 2 / 3;
+}
+.index-reel img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.reel-1{
+    grid-column: 4 / 5;
+}
+.reel-2{
+  grid-column: 5 / 6;
+}
+.reel-3{
+  grid-column: 6 / 7;
+}
+.reel-more{
+  grid-column: 7 / 8;
+}
+
+.index-reel:hover .layer-gold , .layer-black-to-gold{
+  background-color: rgba(235,235,1,0.6);
+}
+.index-reel:hover .layer-black-to-gold{
+  background-color: rgba(235,235,1,0.6);
+}
+
+.index-reel .layer-gold{
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.index-reel .layer-black-to-gold{
+  position: absolute;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.index-showcolumn{
+  display: grid;
+  grid-template-columns: 2% 2% auto;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "div div-sub show";
+
+  margin: 100px 25px 20px 25px;
+  height: 100vh;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.index-showcolumn img{
+  grid-area: show;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  object-position: center;
+}
+
+.showcolumn-show .index-main-div{
+  grid-area: div;
+}
+.showcolumn-show .index-sub-div{
+  grid-area: div-sub;
 }
