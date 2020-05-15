@@ -563,6 +563,69 @@ main{
 }
 
 
+.index-tricolumn-link{
+  height: fit-content;
+  margin: 50px 0px 50px 0px;
+  /*
+  background-color: rgba(59, 110, 130,0.8);
+  */
+  background-color: rgba(255, 255, 255,1);
+  display: grid;
+  grid-template-columns: 3% 97%;
+  grid-template-rows: 50px 40px auto;
+  grid-template-areas:
+  "div h1"
+  "div h2"
+  "div p"
+  "div link"
+}
+.index-tricolumn-link div{
+  grid-area: div;
+}
+.index-tricolumn-link h1{
+  font-size: 28px;
+  font-weight: 700;
+  font-family: bodoni;
+  padding: 20px 0px 5px 20px;
+
+  justify-self: start;
+  align-self: flex-end;
+  grid-area: h1;
+}
+.index-tricolumn-link h2{
+  font-size: 22px;
+  font-weight: 600;
+  font-family: bodoni;
+  padding: 5px 0px 5px 20px;
+
+  justify-self: start;
+  align-self: flex-start;
+  grid-area: h2;
+}
+.index-tricolumn-link p{
+  padding: 0px 15px 15px 20px;
+  width: 90%;
+  height: fit-content;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: calibri;
+  line-height: 30px;
+
+  grid-area: p;
+}
+
+.index-tricolumn-link a{
+  padding: 0px 15px 15px 20px;
+  width: 90%;
+  height: fit-content;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: calibri;
+  line-height: 30px;
+
+  grid-area: link;
+}
+
 .index-slogan-banner{
   height: 250px;
   margin: 100px 25px 20px 25px;
@@ -1191,6 +1254,74 @@ footer h1{
     line-height: 30px;
 
     grid-area: p;
+    align-self: center;
+    justify-self: start;
+  }
+
+  .index-tricolumn-link{
+    height: 250px;
+    margin: 50px 25px 50px 25px;
+    /*
+    background-color: rgba(59, 110, 130,0.8);
+    */
+    background-color: rgba(255, 255, 255,1);
+    display: grid;
+    grid-template-columns: 2% 32% 66%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "div h1 p"
+    "div h2 p"
+    "div . link"
+  }
+  .index-tricolumn-link div{
+    grid-area: div;
+  }
+  .index-tricolumn-link h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: bodoni;
+    padding: 0px 0px 5px 20px;
+
+    justify-self: start;
+    align-self: flex-end;
+    grid-area: h1;
+  }
+  .index-tricolumn-link h2{
+    font-size: 35px;
+    font-weight: 600;
+    font-family: bodoni;
+    padding: 5px 0px 5px 20px;
+
+    justify-self: start;
+    align-self: flex-start;
+    grid-area: h2;
+  }
+
+  /*I changed the padding right*/
+  .index-tricolumn-link p{
+    padding-right: 50px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: calibri;
+    line-height: 30px;
+
+    grid-area: p;
+    align-self: center;
+    justify-self: start;
+  }
+
+  .index-tricolumn-link a{
+    padding-right: 30px;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: calibri;
+    line-height: 30px;
+
+    grid-area: link;
     align-self: center;
     justify-self: start;
   }
