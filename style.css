@@ -216,6 +216,13 @@
   text-shadow: -6px 3px rgb(67, 175, 155);
 }
 
+.twitter-timeline{
+  margin: 0px 25px 0px 25px;
+}
+.fb-page{
+  margin: 0px 25px 0px 25px;
+}
+
 * {
   text-decoration: none;
 }
