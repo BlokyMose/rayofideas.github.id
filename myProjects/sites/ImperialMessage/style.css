@@ -1,0 +1,175 @@
+#index-body {
+  background: linear-gradient(-45deg,
+    rgba(10, 0, 0, 1),
+    rgba(245, 215, 0, 1),
+    rgba(225, 145, 0, 1),
+    rgba(225, 215, 0, 1)
+    );
+	background-size: 800% 800%;
+	animation: body-gradient 25s ease infinite;
+  background-attachment: fixed;
+  height: 100vh;
+}
+#index-body-dark{
+  opacity: 0;
+  position: fixed;
+  height: 100vh;
+  width: 200vh;
+  z-index: -1;
+  background: linear-gradient(-45deg,
+    rgba(10, 20, 120, 1),
+    rgba(150, 80, 0, 1),
+    rgba(60, 30, 0, 1),
+    rgba(10, 10, 25, 1)
+    );
+  background-size: 800% 800%;
+  transition: opacity 3s ease-in;
+  animation: body-gradient 15s ease infinite;
+  background-attachment: fixed;
+}
+#index-header{
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  height: 15vh;
+  display:grid;
+  grid-template-columns: 25% auto 10% 10% 10%;
+  padding: 32px 32px 0 32px;
+}
+#index-header div{
+  transition: all 0.25s ease-in-out;
+}
+#index-header div:hover{
+  color: rgba(255,255,255,1);
+  transition: all 0.25s ease-in-out;
+}
+#header-title {
+  text-align:center;
+}
+#header-title h1{
+  color: white;
+  font-family: fahkwang;
+  font-size: 32px;
+}
+#header-title h2{
+  color: rgba(255,255,255,0.8);
+  margin-top: 10px;
+  font-family: sawarbi;
+  font-size: 28px;
+}
+
+#header-lang-eng-jpn {
+  height:100%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  align-self: center;
+  font-family: humnst;
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  text-align:center;
+}
+
+#header-lang-eng {
+  height:100%;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  align-self: center;
+  font-family: humnst;
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  text-align:center;
+}
+
+#header-lang-jpn {
+  height:100%;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  align-self: center;
+  font-family: humnst;
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+  text-align:center;
+}
+
+#index-main{
+  display: grid;
+height: 60vh;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 95% 5%;
+  padding: 64px 32px 32px 48px;
+}
+#index-narrative-container{
+  align-self: center;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#index-narrative-eng{
+  /* font-size: 28px; */
+  /* font-family: sawarbi; */
+  /* line-height: 35pt; */
+
+  font-size: 56px;
+  line-height: 70pt;
+  font-family: fahkwang;
+  break-after: always;
+
+  color: white;
+  margin-bottom: 30px;
+  transition: color 0.5s ease-in;
+}
+#index-narrative-jpn{
+  font-size: 28px;
+  line-height: 35pt;
+  font-family: sawarbi;
+  color: white;
+  transition: color 0.5s ease-in;
+}
+#index-main-img{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+#index-main-scroll-container{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#index-main-scroll-bar{
+  width:50vh;
+  height: 50%;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: width 0s ease-in-out;
+}
+#index-footer{
+  font-size: 18px;
+  line-height: 25pt;
+  font-family: sawarbi;
+  color: white;
+  transition: all 1s ease-out;
+}
+
+@font-face {
+  src: url(fonts/humnst777.ttf);
+  font-family: humnst;
+}
+@font-face {
+  src: url(fonts/Fahkwang-Regular.ttf);
+  font-family: fahkwang;
+}
+@font-face {
+  src: url(fonts/SawarabiGothic-Regular.ttf);
+  font-family: sawarbi;
+}
+@keyframes body-gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}

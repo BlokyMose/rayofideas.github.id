@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Imperial Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetstyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body id="index-body" onload="Init()">
+    <div id="index-body-dark"></div>
+    <header id="index-header">
+      <div id="header-title"  class="header-item">
+        <h1>IMPERIAL MESSAGE</h1>
+        <h2>皇 帝 使 者</h2>
+      </div>
+      <div id="header-lang-eng-jpn" class="header-item" onmouseover="showNarrative('all')">
+        ENG-JPN
+      </div>
+      <div id="header-lang-eng" class="header-item" onmouseover="showNarrative('eng')">
+        ENG
+      </div>
+      <div id="header-lang-jpn" class="header-item" onmouseover="showNarrative('jpn')">
+        JPN
+      </div>
+    </header>
+    <main id="index-main">
+      <div id="index-narrative-container">
+        <div id="index-narrative-eng"></div>
+        <div id="index-narrative-jpn"></div>
+      </div>
+      <div id="index-main-img"></div>
+      <div id="index-main-scroll-container">
+        <div id="index-main-scroll-bar">
+        </div>
+        <div id="index-footer">Scroll →</div>
+      </div>
+    </main>
+  </body>
+</html>
