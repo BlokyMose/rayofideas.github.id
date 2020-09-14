@@ -1,0 +1,16 @@
+{
+"companyName": "RaynhardMKemal",
+"productName": "Disconnect_Interactive",
+"productVersion": "0.1",
+"dataUrl": "Disconnect_Build_WebGL.data.unityweb",
+"wasmCodeUrl": "Disconnect_Build_WebGL.wasm.code.unityweb",
+"wasmFrameworkUrl": "Disconnect_Build_WebGL.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#121316",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.5f1"
+}
