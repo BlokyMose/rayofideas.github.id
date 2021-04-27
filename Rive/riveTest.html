@@ -7,19 +7,16 @@
         <link rel="stylesheet" href="styleRive.css">
     </head>
     <body class="parent">
-        <div>Hello</div>
-        <div>
-            <canvas id="canvas" width="500" height="500"></canvas>
-        </div>
-
-        <script src="/dist/rive.min.js"></script>
-        <script>
+        <canvas id="canvas"></canvas>
+        <script src="https://unpkg.com/rive-js@0.7.6/dist/rive.min.js"></script>
+            <script>
             // autoplays the first animation in the default artboard
             new rive.Rive({
-                src: 'https://cdn.rive.app/animations/off_road_car_v7.riv',
+                src: "/raysmile_shake.riv",
                 canvas: document.getElementById('canvas'),
-                autoplay: true
-            });
-        </script>
+                autoplay: true,
+                layout: new rive.Layout({fit: 'cover', alignment: 'center'}),
+            })
+            </script>
     </body>
 </html>
