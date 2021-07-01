@@ -1,0 +1,10 @@
+var nama = "Bambang"
+var body_path = "res://Assets/Images/UI/Karakter/Other/Other_Body.png"
+
+var normal_lurus_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Normal_Lurus.png"
+var normal_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Normal.png"
+var lelah_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Lelah.png"
+var marah_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Marah.png"
+var sedih_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Sedih.png"
+var senang_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Senang.png"
+var terkejut_path = "res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Terkejut.png"

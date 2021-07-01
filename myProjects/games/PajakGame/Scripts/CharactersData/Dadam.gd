@@ -1,0 +1,10 @@
+var nama = "Dadam"
+var body_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Badan.png"
+
+var normal_lurus_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Normal.png"
+var normal_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Normal.png"
+var lelah_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Lelah.png"
+var marah_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Marah.png"
+var sedih_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Sedih.png"
+var senang_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Senang.png"
+var terkejut_path = "res://Assets/Images/UI/Karakter/Dadam/Dadam_Normal.png"

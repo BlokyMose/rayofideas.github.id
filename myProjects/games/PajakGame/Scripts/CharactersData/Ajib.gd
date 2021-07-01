@@ -1,0 +1,10 @@
+var nama = "Ajib"
+var body_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Badan.png"
+
+var normal_lurus_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Normal.png"
+var normal_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Normal.png"
+var lelah_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Lelah.png"
+var marah_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Normal.png"
+var sedih_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Sedih.png"
+var senang_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Senang.png"
+var terkejut_path = "res://Assets/Images/UI/Karakter/Ajib/Ajib_Normal.png"

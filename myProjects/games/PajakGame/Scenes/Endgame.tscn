@@ -1,0 +1,408 @@
+[gd_scene load_steps=27 format=2]
+
+[ext_resource path="res://Assets/Fonts/IncisedCtBt/TT0468M_.TTF" type="DynamicFontData" id=1]
+[ext_resource path="res://Scripts/Endgame.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Images/UI/Wallpaper/MainMenu_BG.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Audio/SFX/Human Crowd Yeah 03.mp3" type="AudioStream" id=4]
+[ext_resource path="res://Assets/Images/UI/UIParts/Lingkaran_Putih_Luaran.png" type="Texture" id=5]
+[ext_resource path="res://Scripts/PanelBambang.gd" type="Script" id=6]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Wajah/Wajah_Senang.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Aksesoris/Aksesoris_BajuBiasa.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Janggut.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Kumis.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Hidung.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Keriput.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Kacamata.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Kepala.png" type="Texture" id=14]
+[ext_resource path="res://Assets/Images/UI/Karakter/Bambang/Rambut.png" type="Texture" id=15]
+[ext_resource path="res://Assets/Images/UI/Karakter/Other/Etan.png" type="Texture" id=16]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 1, 1, 0.27451 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 72
+outline_size = 12
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 4
+extra_spacing_space = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 52
+outline_size = 8
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 4
+extra_spacing_space = 2
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "anim_endgame"
+length = 0.5
+tracks/0/type = "bezier"
+tracks/0/path = NodePath("LabelRaportKonten:rect_position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 513.468, -0.25, 0, 0.25, 0, 513.468, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath("LabelRaportKonten:rect_position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 728.671, -0.25, 0, 0.25, 0, 349.233, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath("LabelRaport:rect_position:x")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 513.468, -0.25, 0, 0.25, 0, 513.468, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath("LabelRaport:rect_position:y")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 477.6, -0.25, 0, 0.25, 0, 83.0609, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/4/type = "bezier"
+tracks/4/path = NodePath("LabelRaportKonten:modulate:r")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/5/type = "bezier"
+tracks/5/path = NodePath("LabelRaportKonten:modulate:g")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/6/type = "bezier"
+tracks/6/path = NodePath("LabelRaportKonten:modulate:b")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/7/type = "bezier"
+tracks/7/path = NodePath("LabelRaportKonten:modulate:a")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/8/type = "bezier"
+tracks/8/path = NodePath("LabelRaport:modulate:r")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/9/type = "bezier"
+tracks/9/path = NodePath("LabelRaport:modulate:g")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/10/type = "bezier"
+tracks/10/path = NodePath("LabelRaport:modulate:b")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+tracks/11/type = "bezier"
+tracks/11/path = NodePath("LabelRaport:modulate:a")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.5 )
+}
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 104, 104 )
+margin_left = 52.0
+margin_right = 52.0
+modulate_color = Color( 0.47086, 0.78, 0.3276, 1 )
+
+[sub_resource type="StyleBoxTexture" id=6]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 104, 104 )
+margin_left = 52.0
+margin_right = 52.0
+modulate_color = Color( 0.247503, 0.41, 0.1722, 1 )
+
+[sub_resource type="StyleBoxTexture" id=7]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 104, 104 )
+margin_left = 52.0
+margin_right = 52.0
+modulate_color = Color( 0.247503, 0.41, 0.1722, 1 )
+
+[sub_resource type="StyleBoxTexture" id=8]
+texture = ExtResource( 5 )
+region_rect = Rect2( 0, 0, 104, 104 )
+margin_left = 52.0
+margin_right = 52.0
+modulate_color = Color( 0.364706, 0.603922, 0.25098, 1 )
+
+[sub_resource type="DynamicFont" id=9]
+size = 52
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[node name="Endgame" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 340.359, 651.52 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BG" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="BG"]
+margin_right = 1920.0
+margin_bottom = 1080.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="LabelRaport" type="Label" parent="."]
+margin_left = 513.468
+margin_top = 51.3129
+margin_right = 1412.47
+margin_bottom = 228.313
+custom_fonts/font = SubResource( 2 )
+text = "RAPOR KEHIDUPAN
+BAMBANG"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LabelRaportKonten" type="Label" parent="."]
+margin_left = 513.468
+margin_top = 307.961
+margin_right = 1412.47
+margin_bottom = 773.961
+custom_fonts/font = SubResource( 3 )
+text = "Kontribusi Kota : 
+Total Dosa :
+
+Total Renovasi :
+Bangunan Baru :
+
+Akhir Kata :"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "anim_endgame"
+anims/anim_endgame = SubResource( 4 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[node name="ButtonSelesai" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1153.69
+margin_top = -155.391
+margin_right = -767.693
+margin_bottom = -30.3914
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+custom_styles/normal = SubResource( 8 )
+custom_fonts/font = SubResource( 9 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Selesai"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PanelBambang" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -936.242
+margin_top = -155.718
+margin_right = -486.242
+margin_bottom = 2.28186
+rect_min_size = Vector2( 450, 0 )
+mouse_filter = 2
+custom_styles/panel = SubResource( 10 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Etan" type="TextureRect" parent="PanelBambang"]
+visible = false
+margin_left = 108.407
+margin_top = -267.607
+margin_right = 552.408
+margin_bottom = 176.393
+mouse_filter = 2
+texture = ExtResource( 16 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kepala" type="TextureRect" parent="PanelBambang"]
+margin_left = 68.4123
+margin_top = -187.268
+margin_right = 331.412
+margin_bottom = 154.732
+mouse_filter = 2
+texture = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Keriput" type="TextureRect" parent="PanelBambang"]
+visible = false
+margin_left = 114.399
+margin_top = -151.045
+margin_right = 377.399
+margin_bottom = 190.955
+mouse_filter = 2
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hidung" type="TextureRect" parent="PanelBambang"]
+margin_left = 164.611
+margin_top = -79.3297
+margin_right = 237.611
+margin_bottom = -20.3297
+mouse_filter = 2
+texture = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Wajah" type="TextureRect" parent="PanelBambang"]
+margin_left = 115.539
+margin_top = -107.823
+margin_right = 289.539
+margin_bottom = 28.1772
+mouse_filter = 2
+texture = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kacamata" type="TextureRect" parent="PanelBambang"]
+visible = false
+margin_left = 109.768
+margin_top = -117.962
+margin_right = 283.768
+margin_bottom = -36.9624
+mouse_filter = 2
+texture = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Janggut" type="TextureRect" parent="PanelBambang"]
+visible = false
+margin_left = 134.094
+margin_top = -38.0286
+margin_right = 264.094
+margin_bottom = 95.9714
+mouse_filter = 2
+texture = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Kumis" type="TextureRect" parent="PanelBambang"]
+visible = false
+margin_left = 150.353
+margin_top = -39.3808
+margin_right = 255.353
+margin_bottom = 16.6192
+mouse_filter = 2
+texture = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Rambut" type="TextureRect" parent="PanelBambang"]
+self_modulate = Color( 0.819608, 0.572549, 0.411765, 1 )
+margin_left = 69.0281
+margin_top = -240.838
+margin_right = 332.028
+margin_bottom = -22.8377
+mouse_filter = 2
+texture = ExtResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Aksesoris" type="TextureRect" parent="PanelBambang"]
+margin_left = -18.9637
+margin_top = -265.695
+margin_right = 426.036
+margin_bottom = 178.305
+mouse_filter = 2
+texture = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

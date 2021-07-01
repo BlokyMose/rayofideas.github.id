@@ -1,0 +1,10 @@
+var nama = "Bebeb"
+var body_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Badan.png"
+
+var normal_lurus_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Normal.png"
+var normal_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Normal.png"
+var lelah_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Lelah.png"
+var marah_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Marah.png"
+var sedih_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Sedih.png"
+var senang_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Senang.png"
+var terkejut_path = "res://Assets/Images/UI/Karakter/Bebeb/Bebeb_Normal.png"

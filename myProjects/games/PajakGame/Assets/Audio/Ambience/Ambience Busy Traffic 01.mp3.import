@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Ambience Busy Traffic 01.mp3-204affc02ec8e751d1a7a7442e557a72.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Ambience/Ambience Busy Traffic 01.mp3"
+dest_files=[ "res://.import/Ambience Busy Traffic 01.mp3-204affc02ec8e751d1a7a7442e557a72.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

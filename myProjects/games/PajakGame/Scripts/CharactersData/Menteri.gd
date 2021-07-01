@@ -1,0 +1,10 @@
+var nama = "Menteri"
+var body_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Badan.png"
+
+var normal_lurus_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Normal.png"
+var normal_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Normal.png"
+var lelah_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Lelah.png"
+var marah_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Marah.png"
+var sedih_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Sedih.png"
+var senang_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Senang.png"
+var terkejut_path = "res://Assets/Images/UI/Karakter/Menteri/Menteri_Normal.png"

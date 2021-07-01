@@ -1,0 +1,10 @@
+var nama = "Budiman"
+var body_path = "res://Assets/Images/UI/Karakter/Budiman/Dadam_Badan.png"
+
+var normal_lurus_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Normal.png"
+var normal_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Normal.png"
+var lelah_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Lelah.png"
+var marah_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Marah.png"
+var sedih_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Sedih.png"
+var senang_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Senang.png"
+var terkejut_path = "res://Assets/Images/UI/Karakter/Budiman/Budiman_Normal.png"

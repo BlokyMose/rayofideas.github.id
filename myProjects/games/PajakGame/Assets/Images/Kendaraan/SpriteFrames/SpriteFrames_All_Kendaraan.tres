@@ -1,0 +1,40 @@
+[gd_resource type="SpriteFrames" load_steps=11 format=2]
+
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Bajai_B.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Bajai.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Mobil.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Mobil_B.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Motor.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Motor_B.png" type="Texture" id=6]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Bus.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Ambulans.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Ambulans_B.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Images/Kendaraan/Sprites/K_Bus_B.png" type="Texture" id=10]
+
+[resource]
+animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "Motor",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "Bajai",
+"speed": 0.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "Bus",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Mobil",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "Ambulans",
+"speed": 5.0
+} ]
