@@ -127,47 +127,52 @@ window.addEventListener("wheel", event => {
         }
 
       }
+
+      if(indexSection > 7 && indexSection < 12){
+        scroll.style.backgroundColor= 'rgba(150,0,0,'+(scrollAlpha+delta*-0.075).toString()+')';
+      }
     }
 
 });
 
 function UIChange(){
-switch (indexSection) {
-  case 0:
-    indexHeader.style.opacity = 0;
-    indexFooter.style.opacity = 1;
-    narrativeEng.style.fontSize = "56px";
-    narrativeEng.style.fontFamily = "fahkwang";
-    narrativeEng.style.lineHeight = "70pt";
-    scroll.style.transition = "width 0s ease-in-out";
-    break;
-  case 1:
-    indexHeader.style.opacity = 1;
-    indexFooter.style.opacity =0;
-    narrativeEng.style.fontSize = "28px";
-    narrativeEng.style.fontFamily = "sawarbi";
-    narrativeEng.style.lineHeight = "35pt";
-    scroll.style.transition = "width 0s ease-in-out";
-    break;
-  case 8:
-    scroll.style.transition = "width 0.3s ease-in-out";
-    indexBodyDark.style.opacity = 0.5;
-    break;
-  case 9:
-    scroll.style.transition = "width 0.4s ease-in-out";
-    break;
-  case 10:
-    scroll.style.transition = "width 0.5s ease-in-out";
-    indexBodyDark.style.opacity = 1;
-    break;
-  case 11:
-    scroll.style.transition = "width 0.5s ease-in-out";
-    break;
-  default:
-    scroll.style.transition = "width 0s ease-in-out";
-    break;
+  switch (indexSection) {
+    case 0:
+      indexHeader.style.opacity = 0;
+      indexFooter.style.opacity = 1;
+      narrativeEng.style.fontSize = "56px";
+      narrativeEng.style.fontFamily = "fahkwang";
+      narrativeEng.style.lineHeight = "70pt";
+      scroll.style.transition = "width 0s ease-in-out";
+      break;
+    case 1:
+      indexHeader.style.opacity = 1;
+      indexFooter.style.opacity = 0.75;
+      narrativeEng.style.fontSize = "28px";
+      narrativeEng.style.fontFamily = "sawarbi";
+      narrativeEng.style.lineHeight = "35pt";
+      scroll.style.transition = "width 0s ease-in-out";
 
-}
+      break;
+    case 8:
+      scroll.style.transition = "width 0.3s ease-in-out";
+      indexBodyDark.style.opacity = 0.5;
+      break;
+    case 9:
+      scroll.style.transition = "width 0.4s ease-in-out";
+      break;
+    case 10:
+      scroll.style.transition = "width 0.5s ease-in-out";
+      indexBodyDark.style.opacity = 1;
+      break;
+    case 11:
+      scroll.style.transition = "width 0.5s ease-in-out";
+      break;
+    default:
+      scroll.style.transition = "width 0s ease-in-out";
+      break;
+
+  }
 }
 
 function SetNarration(){
